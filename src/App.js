@@ -1,10 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
+import Navigation from "./components/Navigation/Navigation.js";
 
+//const Element = <h1>This is an h1 Element</h1>
 // Delete App.css and logo.svg
 function App() {
-
-return <Navigation/>
+return <Navigation />;
 
   // return (
   //   <div className="App">
