@@ -1,9 +1,10 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import "./Navigation.css";
 
 function Navigation() {
-  return(
+  return (
     <nav>
-      <img src="" alt="my  web log"/>
+      <img src="" alt="my  web logo" />
 
       <ul>
         <li>
