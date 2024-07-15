@@ -1,4 +1,11 @@
 import Navigation from "./components/Navigation/Navigation.js";
+import BookList from "./components/booklist/BookList";
+import Button from "./components/button/Button";
+import Counter from "./components/counter/Counter";
+// import Welcome, { WelcomeStudent } from "./components/welcome/Welcome";
+import Welcome from "./components/welcome/Welcome.js";
+
+
 
 const name = "Lindsay Ezeagu";
 const hasUser = false;
@@ -11,15 +18,45 @@ function App() {
   return (
     <div>
     <Navigation />
-    <h3>Welcome, {name}</h3>
-    <BookList name="Alex Fatoberu"/>
-    <BookList name="Lupin Assane" />
+    <Welcome nameProps={name} />
+    <BookList name={name} />
+    <BookList name="Alex" />
+    <Button
+      text="View Bootcamps"
+      buttonBackground="rgb(251, 175, 0)"
+      buttonColor="#fff"
+    />
+    <br />
+    <br />
+    <Button
+      text="Partner with us"
+      buttonBackground="rgb(251, 175, 0)"
+      buttonColor="#fff"
+    />
+    <Counter />
   </div>
 
     );
   }
 
 export default App;
+
+
+// function App() {
+
+//   if (hasUser){
+//     return <h3>{name} is a user here</h3>;
+//   }
+//   return (
+//     <div>
+//     <Navigation />
+//     <h3>Welcome, {name}</h3>
+//     <BookList name="Alex Fatoberu"/>
+//     <BookList name="Lupin Assane" />
+//   </div>
+
+//     );
+//   }
 
 
 

@@ -1,4 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import Button from "../button/Button";
 import "./Navigation.css";
 
 function Navigation() {
@@ -17,6 +18,11 @@ function Navigation() {
           <a href="#">Services</a>
         </li>
       </ul>
+      <Button
+        text="Join Niyo Family"
+        buttonBackgroung="#fff"
+        buttonColor="rgb(251,175,0)"
+        />
     </nav>
   );
 }
